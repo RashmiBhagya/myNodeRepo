@@ -33,7 +33,7 @@ var msg = require("./my-module.js");
 msg.log("Hello World");
 
 const myPromise = new Promise((resolve, reject) => {
-    if (condition) {
+    if (userID=1) { //you should condition
       resolve("Success!");
     } else {
       reject("Failure!");
@@ -46,3 +46,13 @@ const myPromise = new Promise((resolve, reject) => {
     .catch((error) => {
       console.log(error);
     });
+
+    async function myFunction() {
+      try {
+      const result = await myPromise;
+      console.log(result);
+      } catch (error) {
+      console.log(error);
+      }
+     }
+     myFunction();
