@@ -28,3 +28,6 @@ https.get('https://jsonplaceholder.typicode.com/posts/1', (resp) => {
 }).on('error', (err) => {
  console.log("Error: " + err.message);
 });
+
+var msg = require("./my-module.js");
+msg.log("Hello World");
