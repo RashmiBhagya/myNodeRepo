@@ -31,3 +31,18 @@ https.get('https://jsonplaceholder.typicode.com/posts/1', (resp) => {
 
 var msg = require("./my-module.js");
 msg.log("Hello World");
+
+const myPromise = new Promise((resolve, reject) => {
+    if (condition) {
+      resolve("Success!");
+    } else {
+      reject("Failure!");
+    }
+  });
+  myPromise
+    .then((result) => {
+      console.log(result);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
